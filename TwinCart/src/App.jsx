@@ -24,14 +24,48 @@
 
 // export default App;
 
+// import React from 'react'
+// import Main from './Components/Main/Main.jsx'
+
+// function App() {
+//   return (
+//     <div>
+//       <Main />
+
+
+//     </div>
+//   )
+// }
+
+
+// export default App
+
+// import React from "react";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import About from "./Components/About/About.jsx";
+// import Navbar from "./Components/Navbar/Navbar.jsx";
+// I
+
+// function App() {
+//   return (
+//     <Router>
+//       <Navbar />
+//       <Routes>
+//         <Route path="/about" element={<About />} />
+//       </Routes>
+//     </Router>
+//   );
+// }
+
+// export default App;
+
 import React from 'react'
-import Main from './Components/Main/Main.jsx'
+import About from './Components/About/About.jsx'
 
 function App() {
   return (
     <div>
-      <Main />
-
+      <About />
     </div>
   )
 }
