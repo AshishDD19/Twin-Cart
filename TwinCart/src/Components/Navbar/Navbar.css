@@ -1,12 +1,10 @@
-
 .navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  background-color: #004d40; 
+  align-items: center;
+  background: white;
   padding: 10px 40px;
-  color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .nav-logo {
@@ -16,78 +14,44 @@
 }
 
 .nav-logo img {
-  height: 45px;
-  width: 45px;
-  border-radius: 50%;
+  width: 70px;
+  height: 70px;
 }
-
-.nav-logo h2 {
-  font-size: 1.6rem;
-  font-weight: bold;
-}
-
 
 .nav-links {
-  list-style: none;
   display: flex;
   gap: 30px;
+  list-style: none;
 }
 
 .nav-links li a {
-  color: white;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 1rem;
-  transition: 0.3s;
+  color: #333;
+  font-size: 18px;
+  transition: color 0.2s;
 }
 
 .nav-links li a:hover {
-  color: #ffd700; 
+  color: tomato;
 }
 
-.nav-actions {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.nav-actions input {
-  padding: 6px 12px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  width: 200px;
-}
-
-.search-btn,
-.cart-btn,
-.login-btn {
-  background-color: #00796b;
-  border: none;
-  color: white;
-  padding: 6px 12px;
-  border-radius: 5px;
+.nav-actions .login-btn {
+  border: 1px solid tomato;
+  color: tomato;
+  padding: 8px 20px;
+  border-radius: 50px;
+  background: transparent;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: 0.3s;
 }
 
-.search-btn:hover,
-.cart-btn:hover,
-.login-btn:hover {
-  background-color: #009688;
+.nav-actions .login-btn:hover {
+  background: tomato;
+  color: white;
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 750px) {
   .nav-links {
     display: none;
-  }
-
-  .nav-actions input {
-    width: 120px;
-  }
-
-  .navbar {
-    flex-wrap: wrap;
   }
 }
